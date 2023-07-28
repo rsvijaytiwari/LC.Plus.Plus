@@ -1,19 +1,14 @@
-#include <cstdio>
+#include <iostream>
 using namespace std;
-int main(){ // block of code and function
-    puts("Click on Button"); // statement
-    puts("create a new player");
-    puts("add life to player");
-    return 0; // return an exit with 0 code
-}
 /*
- * This is multiline comment
+ * C++ namespace specify the default module which we
+ * are going to use by our program for example if you want
+ * to use cout then we write std::cout and also mentioned
+ * the package or module name if we declare namespace with
+ * model std or standard, and we can directly write cout
+ * which is totally fine.
  */
-
-// this is for your reference.
-void nothing(){
-    puts("Hello World");
-}
-char iamchar(){
-    return 'r';
+int main(){
+    cout << "Hello World" << endl;
+    return 0;
 }
