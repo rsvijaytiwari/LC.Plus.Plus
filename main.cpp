@@ -4,20 +4,16 @@
 using namespace std;
 
 int main() {
-    int life;
-    life = 4;
+    int score = 200;
+    int *myp = &score;
 
-    int card;
-    card = 40;
-    int my_card = card;
+    printf("Value of score is %d\n", score);
+    printf("Value of score is %p\n", myp);
 
-    int *myp;
-    myp = &card;
+    int &another_score = score;
+    another_score = 800;
 
-    cout << my_card << endl;
-    cout << myp << endl;
-    cout << *myp; //pointer dereference
-
-
+    printf("Value of score is %d\n", score);
+    printf("Value of score is %p\n", myp);
     return 0;
 }
