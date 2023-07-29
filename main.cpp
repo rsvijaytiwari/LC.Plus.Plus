@@ -4,12 +4,20 @@
 using namespace std;
 
 int main() {
-    string first_name;
-    string last_name;
-    cout << "Enter Your First Name: ";
-    getline(cin, first_name);
-    cout << "Enter Your Last Name: ";
-    getline(cin, last_name);
-    cout << "Hey it your first name is " << first_name << " and last name is " << last_name;
+    int life;
+    life = 4;
+
+    int card;
+    card = 40;
+    int my_card = card;
+
+    int *myp;
+    myp = &card;
+
+    cout << my_card << endl;
+    cout << myp << endl;
+    cout << *myp; //pointer dereference
+
+
     return 0;
 }
