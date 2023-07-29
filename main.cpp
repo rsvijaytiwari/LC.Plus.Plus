@@ -4,10 +4,12 @@
 using namespace std;
 
 int main() {
-    string my_color;
-    cout << "Enter Your Favorite Color: \n";
-    getline(cin, my_color); // Getting input using getline
-    cout << "Hey " << my_color << " is my favorite too" << endl;
-
+    string first_name;
+    string last_name;
+    cout << "Enter Your First Name: ";
+    getline(cin, first_name);
+    cout << "Enter Your Last Name: ";
+    getline(cin, last_name);
+    cout << "Hey it your first name is " << first_name << " and last name is " << last_name;
     return 0;
 }
