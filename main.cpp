@@ -4,16 +4,14 @@
 using namespace std;
 
 int main() {
-    int score = 200;
-    int *myp = &score;
+    int integer_array[4] = {1, 2, 3, 4};
+    cout << integer_array[0] << endl;
 
-    printf("Value of score is %d\n", score);
-    printf("Value of score is %p\n", myp);
+    int another_array[4];
+    another_array[0] = 9;
+    another_array[1] = 91;
 
-    int &another_score = score;
-    another_score = 800;
-
-    printf("Value of score is %d\n", score);
-    printf("Value of score is %p\n", myp);
+    cout << another_array[0] << endl;
+    cout << another_array[1] << endl; // default is zero
     return 0;
 }
