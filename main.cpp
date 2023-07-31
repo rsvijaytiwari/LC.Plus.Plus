@@ -9,9 +9,16 @@ int main() {
 
     int another_array[4];
     another_array[0] = 9;
-    another_array[1] = 91;
+    another_array[1] = 19;
 
     cout << another_array[0] << endl;
     cout << another_array[1] << endl; // default is zero
+    int *ap = another_array;
+    *ap = 240;
+    ap = ap + 1;
+    *ap = 250;
+    cout << another_array[0] << endl;
+    cout << another_array[1] << endl;
+
     return 0;
 }
