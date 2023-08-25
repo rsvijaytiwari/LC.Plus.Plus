@@ -1,19 +1,20 @@
-#include <iostream>
+
+#include <cstdio>
 
 using namespace std;
 
 int main() {
-    printf("Float size is %ld bits \n", sizeof(long) * 8);
-    printf("Float size is %ld bits \n", sizeof(double) * 8);
-    printf("Float size is %ld bits \n", sizeof(long double) * 8);
+    int life = 3;
+    int points = 4;
 
-    float my_p_value = 20.2 + 20.2;
+    int score = 2;
+//    score = score + points; // manual
+    score+=points; //shorthand notation
 
-    if (my_p_value == 40.40002){
-        puts("You got it right");
-    }else {
-        puts("Something");
+    if (life != 5){
+        puts("Into if block");
     }
-    printf("My P Value is: %1.30f in float\n", my_p_value);
+
+
     return 0;
 }
