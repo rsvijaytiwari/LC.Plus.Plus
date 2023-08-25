@@ -4,17 +4,17 @@
 using namespace std;
 
 int main() {
-    int life = 3;
-    int points = 4;
+    bool isFbUser = true;
+    bool isGoogleUser = true;
+    bool isAdmin = true;
 
-    int score = 2;
-//    score = score + points; // manual
-    score+=points; //shorthand notation
-
-    if (life != 5){
-        puts("Into if block");
+    if ((isFbUser || isGoogleUser) && isAdmin){
+        puts("Welcome Admin");
+    }else {
+        puts("No Admin Access");
     }
-
-
+    if (isFbUser || isGoogleUser){
+        puts("Welcome User");
+    }
     return 0;
 }
